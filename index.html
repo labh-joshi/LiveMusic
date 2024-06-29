@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top shadow">
+        <div class="container-fluid">
+            <a href="#">
+                <img src="/images/word-black-background_1020495-321373.jpg" alt="" class="brand-logo">
+            </a>
+
+            <ul class="navbar-nav justify-content-end flex-grow-1 d-none d-lg-flex">
+                <li class="nav-item ">
+                    <a href="index.html" class="nav-link fs-6 cool-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link fs-6 cool-link">
+                        Event
+
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link fs-6 cool-link">
+                        Live
+
+
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link fs-6 cool-link">
+                        Subscription
+
+
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link fs-6 cool-link">
+                        Your Library
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav justify-content-end flex-grow-1 d-none d-lg-flex ">
+                <li class="nav-item mx-3">
+
+
+                    <div class="search-box">
+                        <button class="btn-search"><i class="fas fa-search"><img src="/images/search.png" alt=""
+                                    class="icon search"></i></button>
+                        <input type="text" class="input-search shadow" placeholder="Search...">
+                    </div>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="login.html" class="nav-link">
+                        <img src="/images/userprofile.png" alt="" class="icon" style="height: 38px;">
+                    </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="podcast.html" class="nav-link">
+                        <img src="/images/podcast.png" alt="" class="icon">
+                    </a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a href="#" class="nav-link">
+                        <img src="/images/like.png" alt="" class="icon">
+                    </a>
+                </li>
+            </ul>
+
+
+            <button class="navbar-toggler me-sm-5" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </button>
+
+            <!-- <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div> -->
+
+        </div>
+
+        <!-- <div id="offcanvasNavbar" class="offcanvas offcanvas-start d-lg-none" data-bs-backdrop="false" tabindex="-1"
+          aria-labelledby="offcanvasNavbarLabel"> -->
+        <div id="offcanvasNavbar" class="offcanvas offcanvas-start d-lg-none">
+
+            <div class="offcanvas-header pb-0 pt-3">
+                <a href="#" class="active">
+                    <img id="offcanvasNavbarLabel" src="/images/sugandh.jpg" alt="" class="img-fluid"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                </a>
+
+                <!-- <div class="container-fluid d-flex justify-content-end align-items-center">
+              <button class="" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z">
+                  </path>
+                </svg>
+              </button>
+            </div> -->
+            </div>
+
+            <hr class="d-block d-lg-none">
+
+            <div class="offcanvas-body ">
+
+                <ul class="d-block d-lg-none mb-5">
+                    <li class="mx-2">
+                        <div class="search-container d-none d-lg-flex"><input type="text" name="search"
+                                placeholder="Search..." class="search-input"><a href="#" class="search-btn"><i
+                                    class="fas fa-search"><img src="/images/sugandh.jpg" class="icon search"
+                                        alt="Search"></i></a></div>
+
+                        <div class="search__container">
+                            <input class="search__input" type="text" placeholder="Search">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item ">
+                        <a href="sugandh.html" class="nav-link fs-6 cool-link">
+                            Home
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link fs-6 cool-link">
+                            Our Brands
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="shop.html" class="nav-link fs-6 cool-link">
+                            Shop
+
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="collections.html" class="nav-link fs-6 cool-link">
+                            Collections
+
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="sale.html" class="nav-link fs-6 cool-link">
+                            Sale
+
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="Blog.html" class="nav-link fs-6 cool-link">
+                            Blog
+
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="lookbook.html" class="nav-link fs-6 cool-link">
+                            Lookbook
+
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="contact.html" class="nav-link fs-6 cool-link">
+                            Contact us
+
+
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav justify-content-end flex-grow-1 d-none d-lg-flex">
+                    <li class="nav-item mx-3">
+
+
+                        <div class="search-box">
+                            <button class="btn-search"><i class="fas fa-search"><img src="/images/search.png" alt=""
+                                        class="icon search"></i></button>
+                            <input type="text" class="input-search shadow" placeholder="Search...">
+                        </div>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="login.html" class="nav-link">
+                            <img src="/images/userprofile.png" alt="" class="icon">
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="cart.html" class="nav-link">
+                            <img src="/images/cart.png" alt="" class="icon">
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="#" class="nav-link">
+                            <img src="/images/like.png" alt="" class="icon">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mobile-nav-icons justify-content-end flex-grow-1 d-flex d-lg-none mt-4">
+
+                    <hr class="d-block d-lg-none">
+
+                    <li class="mx-2 icons">
+                        <span data-bs-dismiss="offcanvas" aria-label="Close">
+                            <a class="nav-link cool-link" href="login.html" style="color: black;">
+                                <span class="d-flex justify-content-between">
+                                    <span>User Profile</span>
+                                </span>
+                            </a>
+                        </span>
+                        <img src="/images/userprofile.png" class="icon user" alt="User Profile">
+                    </li>
+
+                    <hr class="d-block d-lg-none">
+
+
+                    <li class="mx-2 icons"><span data-bs-dismiss="offcanvas" aria-label="Close">
+                            <a class="nav-link cool-link" href="cart.html" style="color: black;">
+                                <span class="d-flex justify-content-between">
+                                    <span>Cart</span>
+                            </a>
+                        </span>
+                        <img src="/images/cart.png" class="icon cart" alt="Cart"></span>
+                    </li>
+
+                    <hr class="d-block d-lg-none">
+
+
+                    <li class="mx-2 icons"><span data-bs-dismiss="offcanvas" aria-label="Close">
+                            <a class="nav-link cool-link" href="/wishlist" style="color: black;"><span
+                                    class="d-flex justify-content-between">
+                                    <span>Wishlist</span>
+                                </span>
+                            </a>
+                        </span>
+                        <img src="/images/like.png" class="icon like" alt="Wishlist">
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+    </nav>
+
+    <video autoplay muted loop class="video-bg">
+        <source src="/video/music background_2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="page1">
+
+
+
+
+        <div class="overlay">
+            <img src="/images/top_image.png" class="left" alt="">
+            <img src="/images/top_image_2.png" class="middle" alt="">
+            <img src="/images/top_image_3.png" class="right" alt="">
+        </div>
+
+        <div class="p">
+
+            <p class="p1">The <span>music</span> app designed to be used <span>together</span></p>
+            <p class="p2"> Now available as a Discord activity. Coming soon to iOS and Android.</p>
+        </div>
+
+
+        <div class="buttons">
+
+
+            <button class="b1">
+                <svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M30.8252 20.984C31.4746 20.984 32.0004 18.6907 32.0004 15.9011C32.0004 13.1737 31.4746 10.9111 30.8252 10.9111C30.2065 10.9111 29.6816 13.1114 29.6816 15.9011C29.6807 18.6907 30.1759 20.984 30.8252 20.984Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M27.1145 15.901C27.1145 21.7582 26.0322 26.4999 24.6415 26.4999C23.2815 26.4999 22.137 21.7582 22.137 15.901C22.137 10.0437 23.2499 5.302 24.6415 5.302C26.0322 5.302 27.1145 10.0437 27.1145 15.901Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M2.31876 15.9011C2.31876 18.6898 1.79295 20.984 1.17519 20.984C0.525817 20.984 0 18.6284 0 15.9011C0 13.1737 0.525817 10.9111 1.17519 10.9111C1.7939 10.9121 2.31876 13.1124 2.31876 15.9011Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M9.83104 15.901C9.83104 21.7582 8.71812 26.4999 7.35808 26.4999C5.93579 26.4999 4.85352 21.7582 4.85352 15.901C4.85352 10.0437 5.99709 5.302 7.35808 5.302C8.71812 5.302 9.83104 10.0437 9.83104 15.901Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M15.9847 31.397C18.0247 31.397 19.6022 24.455 19.6022 15.902C19.6022 7.41041 18.0257 0.5 15.9847 0.5C13.9446 0.5 12.3672 7.34908 12.3672 15.902C12.3672 24.455 13.9446 31.397 15.9847 31.397Z"
+                        fill="currentColor"></path>
+                </svg>
+                <span>Join Rythm</span>
+            </button>
+
+            <button class="b2">
+                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.9309 1.64138C15.6562 1.0565 14.2892 0.625557 12.86 0.378721C12.834 0.373956 12.8079 0.38587 12.7945 0.409659C12.6187 0.722354 12.424 1.13025 12.2876 1.45087C10.7504 1.22071 9.22102 1.22071 7.71531 1.45087C7.57891 1.12314 7.37711 0.722354 7.20051 0.409659C7.18711 0.386651 7.16109 0.374737 7.13508 0.378721C5.70664 0.624737 4.33968 1.05568 3.06413 1.64138C3.05308 1.64614 3.04363 1.65407 3.03734 1.66439C0.444522 5.53802 -0.265791 9.31647 0.0826467 13.048C0.0842092 13.0663 0.0944827 13.0837 0.108662 13.0949C1.81933 14.3512 3.47644 15.1138 5.10273 15.6194C5.12875 15.6273 5.15632 15.6178 5.17289 15.5964C5.55758 15.071 5.90051 14.5171 6.19453 13.9345C6.21187 13.9004 6.19531 13.8599 6.15984 13.8464C5.6159 13.6401 5.09797 13.3885 4.59972 13.1028C4.56031 13.0798 4.55714 13.0235 4.59343 12.9965C4.69828 12.9179 4.80316 12.8362 4.90328 12.7536C4.9214 12.7385 4.94664 12.7354 4.96793 12.7449C8.24106 14.2393 11.7846 14.2393 15.0191 12.7449C15.0404 12.7346 15.0656 12.7378 15.0845 12.7528C15.1847 12.8353 15.2895 12.9179 15.3952 12.9964C15.4314 13.0234 15.429 13.0798 15.3897 13.1028C14.8914 13.394 14.3735 13.6401 13.8288 13.8456C13.7933 13.8591 13.7775 13.9004 13.7949 13.9345C14.0952 14.5162 14.4382 15.0701 14.8158 15.5955C14.8315 15.6178 14.8599 15.6273 14.8859 15.6193C16.5201 15.1138 18.1772 14.3511 19.8879 13.0948C19.9029 13.0837 19.9123 13.0671 19.9139 13.0488C20.3309 8.73471 19.2154 4.98724 16.9568 1.66517C16.9514 1.65407 16.9419 1.64614 16.9309 1.64138ZM6.6834 10.7759C5.69797 10.7759 4.88597 9.87119 4.88597 8.7601C4.88597 7.64904 5.68218 6.74431 6.6834 6.74431C7.69242 6.74431 8.49656 7.65697 8.48078 8.7601C8.48078 9.87119 7.68453 10.7759 6.6834 10.7759ZM13.329 10.7759C12.3436 10.7759 11.5316 9.87119 11.5316 8.7601C11.5316 7.64904 12.3278 6.74431 13.329 6.74431C14.3381 6.74431 15.1422 7.65697 15.1264 8.7601C15.1264 9.87119 14.3381 10.7759 13.329 10.7759Z"
+                        fill="currentColor">
+                    </path>
+                </svg>
+                <span>Join our Discord</span>
+            </button>
+        </div>
+
+    </div>
+
+    <div id="page2">
+
+        <div class="top">
+            <div class="left">
+
+                <svg width="205" height="114" viewBox="0 0 205 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="91" width="114" height="114" rx="57" fill="#0F0E17"></rect>
+                    <rect x="91.5" y="0.5" width="113" height="113" rx="56.5" stroke="white" stroke-opacity="0.08">
+                    </rect>
+                    <g clip-path="url(#clip0_0_1)">
+                        <path
+                            d="M166.531 63.23C167.343 63.23 168 60.3634 168 56.8763C168 53.4671 167.343 50.6389 166.531 50.6389C165.758 50.6389 165.102 53.3893 165.102 56.8763C165.1 60.3634 165.719 63.23 166.531 63.23Z"
+                            fill="white"></path>
+                        <path
+                            d="M161.894 56.8764C161.894 64.1979 160.541 70.1251 158.803 70.1251C157.103 70.1251 155.672 64.1979 155.672 56.8764C155.672 49.5549 157.063 43.6277 158.803 43.6277C160.541 43.6277 161.894 49.5549 161.894 56.8764Z"
+                            fill="white"></path>
+                        <path
+                            d="M130.898 56.8763C130.898 60.3622 130.241 63.23 129.469 63.23C128.657 63.23 128 60.2855 128 56.8763C128 53.4671 128.657 50.6389 129.469 50.6389C130.242 50.6401 130.898 53.3905 130.898 56.8763Z"
+                            fill="white"></path>
+                        <path
+                            d="M140.288 56.8761C140.288 64.1977 138.897 70.1248 137.197 70.1248C135.419 70.1248 134.066 64.1977 134.066 56.8761C134.066 49.5546 135.496 43.6274 137.197 43.6274C138.897 43.6274 140.288 49.5546 140.288 56.8761Z"
+                            fill="white"></path>
+                        <path
+                            d="M147.979 76.2463C150.529 76.2463 152.501 67.5687 152.501 56.8775C152.501 46.263 150.53 37.625 147.979 37.625C145.429 37.625 143.457 46.1863 143.457 56.8775C143.457 67.5687 145.429 76.2463 147.979 76.2463Z"
+                            fill="white"></path>
+                    </g>
+                    <rect x="91" width="114" height="114" rx="57" fill="#0F0E17"></rect>
+                    <rect x="91.5" y="0.5" width="113" height="113" rx="56.5" stroke="white" stroke-opacity="0.08">
+                    </rect>
+                    <g clip-path="url(#clip1_0_1)">
+                        <path
+                            d="M161.862 44.283C159.312 43.1132 156.578 42.2514 153.72 41.7577C153.668 41.7482 153.616 41.772 153.589 41.8196C153.237 42.445 152.848 43.2607 152.575 43.902C149.501 43.4417 146.442 43.4417 143.431 43.902C143.158 43.2465 142.754 42.445 142.401 41.8196C142.374 41.7735 142.322 41.7497 142.27 41.7577C139.413 42.2497 136.679 43.1116 134.128 44.283C134.106 44.2925 134.087 44.3084 134.075 44.329C128.889 52.0763 127.468 59.6332 128.165 67.0963C128.168 67.1328 128.189 67.1677 128.217 67.19C131.639 69.7025 134.953 71.2278 138.205 72.2389C138.257 72.2548 138.313 72.2358 138.346 72.1929C139.115 71.1422 139.801 70.0343 140.389 68.8692C140.424 68.801 140.391 68.72 140.32 68.6931C139.232 68.2804 138.196 67.7772 137.199 67.2059C137.121 67.1599 137.114 67.0471 137.187 66.9932C137.396 66.836 137.606 66.6725 137.806 66.5075C137.843 66.4773 137.893 66.471 137.936 66.49C144.482 69.4788 151.569 69.4788 158.038 66.49C158.081 66.4693 158.131 66.4757 158.169 66.5058C158.369 66.6709 158.579 66.836 158.79 66.9931C158.863 67.0471 158.858 67.1598 158.779 67.2058C157.783 67.7883 156.747 68.2803 155.657 68.6914C155.586 68.7184 155.555 68.801 155.59 68.8692C156.19 70.0326 156.876 71.1405 157.631 72.1913C157.663 72.2357 157.72 72.2548 157.772 72.2389C161.04 71.2278 164.354 69.7025 167.776 67.1899C167.806 67.1677 167.825 67.1343 167.828 67.0978C168.662 58.4696 166.431 50.9747 161.914 44.3306C161.903 44.3084 161.884 44.2925 161.862 44.283ZM141.367 62.552C139.396 62.552 137.772 60.7426 137.772 58.5204C137.772 56.2983 139.364 54.4889 141.367 54.4889C143.385 54.4889 144.993 56.3142 144.961 58.5204C144.961 60.7426 143.369 62.552 141.367 62.552ZM154.658 62.552C152.687 62.552 151.063 60.7426 151.063 58.5204C151.063 56.2983 152.656 54.4889 154.658 54.4889C156.676 54.4889 158.284 56.3142 158.253 58.5204C158.253 60.7426 156.676 62.552 154.658 62.552Z"
+                            fill="white"></path>
+                    </g>
+                    <rect width="114" height="114" rx="57" fill="#0F0E17"></rect>
+                    <rect x="0.5" y="0.5" width="113" height="113" rx="56.5" stroke="white" stroke-opacity="0.08">
+                    </rect>
+                    <g clip-path="url(#clip2_0_1)">
+                        <path
+                            d="M75.531 63.23C76.3427 63.23 77 60.3634 77 56.8763C77 53.4671 76.3427 50.6389 75.531 50.6389C74.7576 50.6389 74.1016 53.3893 74.1016 56.8763C74.1004 60.3634 74.7193 63.23 75.531 63.23Z"
+                            fill="white"></path>
+                        <path
+                            d="M70.8938 56.8764C70.8938 64.1979 69.5409 70.1251 67.8026 70.1251C66.1025 70.1251 64.6719 64.1979 64.6719 56.8764C64.6719 49.5549 66.063 43.6277 67.8026 43.6277C69.5409 43.6277 70.8938 49.5549 70.8938 56.8764Z"
+                            fill="white"></path>
+                        <path
+                            d="M39.8985 56.8763C39.8985 60.3622 39.2412 63.23 38.469 63.23C37.6573 63.23 37 60.2855 37 56.8763C37 53.4671 37.6573 50.6389 38.469 50.6389C39.2424 50.6401 39.8985 53.3905 39.8985 56.8763Z"
+                            fill="white"></path>
+                        <path
+                            d="M49.2883 56.8761C49.2883 64.1977 47.8972 70.1248 46.1971 70.1248C44.4193 70.1248 43.0664 64.1977 43.0664 56.8761C43.0664 49.5546 44.4959 43.6274 46.1971 43.6274C47.8972 43.6274 49.2883 49.5546 49.2883 56.8761Z"
+                            fill="white"></path>
+                        <path
+                            d="M56.9789 76.2463C59.529 76.2463 61.5008 67.5687 61.5008 56.8775C61.5008 46.263 59.5302 37.625 56.9789 37.625C54.4288 37.625 52.457 46.1863 52.457 56.8775C52.457 67.5687 54.4288 76.2463 56.9789 76.2463Z"
+                            fill="white"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_0_1">
+                            <rect width="40" height="40" fill="white" transform="translate(128 37)"></rect>
+                        </clipPath>
+                        <clipPath id="clip1_0_1">
+                            <rect width="40" height="40" fill="white" transform="translate(128 37)"></rect>
+                        </clipPath>
+                        <clipPath id="clip2_0_1">
+                            <rect width="40" height="40" fill="white" transform="translate(37 37)"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+
+
+            </div>
+
+            <div class="middle">
+                <p class="p1">
+                    Now on Discord
+                </p>
+
+                <p class="p2">Available as an activity with slash <br> commands in all of your servers</p>
+            </div>
+
+            <div class="line"></div>
+
+
+            <div class="right">
+                The same Rythm you know and love, with a sleek new look! <br> Listen to music with your friends in your own way. Control <br> your tracks on desktop, mobile or with slash commands.
+            </div>
+        </div>
+
+        <div class="img_overlay">
+            <img src="/images/page2.png" alt="">
+        </div>
+
+        <div class="buttons">
+
+
+            <button class="b1">
+                <svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M30.8252 20.984C31.4746 20.984 32.0004 18.6907 32.0004 15.9011C32.0004 13.1737 31.4746 10.9111 30.8252 10.9111C30.2065 10.9111 29.6816 13.1114 29.6816 15.9011C29.6807 18.6907 30.1759 20.984 30.8252 20.984Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M27.1145 15.901C27.1145 21.7582 26.0322 26.4999 24.6415 26.4999C23.2815 26.4999 22.137 21.7582 22.137 15.901C22.137 10.0437 23.2499 5.302 24.6415 5.302C26.0322 5.302 27.1145 10.0437 27.1145 15.901Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M2.31876 15.9011C2.31876 18.6898 1.79295 20.984 1.17519 20.984C0.525817 20.984 0 18.6284 0 15.9011C0 13.1737 0.525817 10.9111 1.17519 10.9111C1.7939 10.9121 2.31876 13.1124 2.31876 15.9011Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M9.83104 15.901C9.83104 21.7582 8.71812 26.4999 7.35808 26.4999C5.93579 26.4999 4.85352 21.7582 4.85352 15.901C4.85352 10.0437 5.99709 5.302 7.35808 5.302C8.71812 5.302 9.83104 10.0437 9.83104 15.901Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M15.9847 31.397C18.0247 31.397 19.6022 24.455 19.6022 15.902C19.6022 7.41041 18.0257 0.5 15.9847 0.5C13.9446 0.5 12.3672 7.34908 12.3672 15.902C12.3672 24.455 13.9446 31.397 15.9847 31.397Z"
+                        fill="currentColor"></path>
+                </svg>
+                <span>Invite Rythm</span>
+            </button>
+
+            <button class="b2">
+                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.9309 1.64138C15.6562 1.0565 14.2892 0.625557 12.86 0.378721C12.834 0.373956 12.8079 0.38587 12.7945 0.409659C12.6187 0.722354 12.424 1.13025 12.2876 1.45087C10.7504 1.22071 9.22102 1.22071 7.71531 1.45087C7.57891 1.12314 7.37711 0.722354 7.20051 0.409659C7.18711 0.386651 7.16109 0.374737 7.13508 0.378721C5.70664 0.624737 4.33968 1.05568 3.06413 1.64138C3.05308 1.64614 3.04363 1.65407 3.03734 1.66439C0.444522 5.53802 -0.265791 9.31647 0.0826467 13.048C0.0842092 13.0663 0.0944827 13.0837 0.108662 13.0949C1.81933 14.3512 3.47644 15.1138 5.10273 15.6194C5.12875 15.6273 5.15632 15.6178 5.17289 15.5964C5.55758 15.071 5.90051 14.5171 6.19453 13.9345C6.21187 13.9004 6.19531 13.8599 6.15984 13.8464C5.6159 13.6401 5.09797 13.3885 4.59972 13.1028C4.56031 13.0798 4.55714 13.0235 4.59343 12.9965C4.69828 12.9179 4.80316 12.8362 4.90328 12.7536C4.9214 12.7385 4.94664 12.7354 4.96793 12.7449C8.24106 14.2393 11.7846 14.2393 15.0191 12.7449C15.0404 12.7346 15.0656 12.7378 15.0845 12.7528C15.1847 12.8353 15.2895 12.9179 15.3952 12.9964C15.4314 13.0234 15.429 13.0798 15.3897 13.1028C14.8914 13.394 14.3735 13.6401 13.8288 13.8456C13.7933 13.8591 13.7775 13.9004 13.7949 13.9345C14.0952 14.5162 14.4382 15.0701 14.8158 15.5955C14.8315 15.6178 14.8599 15.6273 14.8859 15.6193C16.5201 15.1138 18.1772 14.3511 19.8879 13.0948C19.9029 13.0837 19.9123 13.0671 19.9139 13.0488C20.3309 8.73471 19.2154 4.98724 16.9568 1.66517C16.9514 1.65407 16.9419 1.64614 16.9309 1.64138ZM6.6834 10.7759C5.69797 10.7759 4.88597 9.87119 4.88597 8.7601C4.88597 7.64904 5.68218 6.74431 6.6834 6.74431C7.69242 6.74431 8.49656 7.65697 8.48078 8.7601C8.48078 9.87119 7.68453 10.7759 6.6834 10.7759ZM13.329 10.7759C12.3436 10.7759 11.5316 9.87119 11.5316 8.7601C11.5316 7.64904 12.3278 6.74431 13.329 6.74431C14.3381 6.74431 15.1422 7.65697 15.1264 8.7601C15.1264 9.87119 14.3381 10.7759 13.329 10.7759Z"
+                        fill="currentColor">
+                    </path>
+                </svg>
+                <span>Join our Discord</span>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
